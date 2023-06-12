@@ -1,0 +1,24 @@
+#! /bin/sh
+sudo yum update -y
+sudo yum install -y docker
+sudo docker --version
+sudo service docker start
+sudo docker info
+sudo systemctl is-active docker
+mysql -h localhost -P 3306 --protocol=tcp -uroot -pletmein
+
+http POST :3000/patients first_name="Alexandre" last_name=Petion email=emailp@gmail.com phone=222-555-6458 address="123 Main Road" diagnosis=Cough image_url=https://profileimage.com
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/dev-philip/docker-node-mysql-api.git
+git push -u origin main
+
+
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/dev-philip/docker-node-mysql-api.git
+git push origin master
