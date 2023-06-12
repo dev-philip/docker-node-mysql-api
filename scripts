@@ -11,14 +11,8 @@ http POST :3000/patients first_name="Alexandre" last_name=Petion email=emailp@gm
 
 git init
 git add README.md
+git add .
 git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/dev-philip/docker-node-mysql-api.git
 git push -u origin main
-
-
-git init
-git add .
-git commit -m "Initial commit"
-git remote add origin https://github.com/dev-philip/docker-node-mysql-api.git
-git push origin master
